@@ -1,0 +1,28 @@
+.foodContainer {
+    padding: 10px;
+    margin: 15px;
+    background-color: white;
+    text-decoration: none;
+}
+.foodContainer:hover {
+    box-shadow: 0px 0px 5px 5px rgb(223, 223, 223);
+}
+.foodImg {
+    width: 250px;
+}
+.foodTitle {
+    width: 250px;
+    height: 70px;
+    font-size: 25px;
+    font-family: 'Blinker', sans-serif;
+}
+.foodPrice {
+    width: 250px;
+    font-size: 28px;
+    color: rgb(79, 79, 79);
+    
+}
+.foodTags {
+    width: 250px;
+    font-size: 16px;
+}
