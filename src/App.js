@@ -12,7 +12,6 @@ import ItemsSauces from "./pages/ItemsSauces"
 
 const App = () => {
     const [order, setOrder] = useState({})
-    const size = order
 
     return (
         <div>

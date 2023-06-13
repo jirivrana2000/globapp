@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Jídlo domů.cz
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projekt Jídlo domů je kompletní front-end eshopu s jídlem.
+Využil jsem plného potenciálu reactu a web jsem vytvořil tak aby se dal po jednoduché úpravě použít na prodej jakéholi zboží. 
 
-## Available Scripts
+Odkaz na web: https://jidlo-domu.netlify.app
 
-In the project directory, you can run:
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React, CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Funkce
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Web je postaven tak, že header a footer jsou přítomné vždy, po kliknutí se mění pouze obsah stránky, případně jde otevře košík.
+- Obsahuje ochranu při zadání neexistující adresy do vyhledávacího pole, zobrazí se po načtení chyba 404. (Funguje pouze když si projekt nahrajete do počítače a pak otevřete, v případě otevření přes netlify se zobrazí chyba od netlify.)
+- Domovská stránka obsahuje odkazy na různé druhy jídel a vyzdvižení domácích omáček
+- Každá další stránka ukazuje vyfiltrovaná jídla podle toho o jaký druh jídla se jedná.
+- Po kliknutí na jednotlivé jídlo se zobrazí větší stránka s větším obrázkem, popisem jídla, možností navolit množství, cena za dané množství a možnost vložit do košíku.
+- Košík lze otevřít kliknutím na ikonu košíku v pravém horním rohu. Když je do něj přidáno jídlo tak zobrazí formulář přes který může uživatel jídlo objednat.
+- Responzivní design do minimální šířky 280px
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Nové zkušenosti
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Vytvoření komplexního webu v reactu včetně všech funkcí eshopu.
+- Kompletně vlastní design
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Fotografie
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Použité fotografie jsou z kamarádové restaurace https://uroba.cz/burgery 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Screenshot
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Jídlodomů cz](https://github.com/jirivrana2000/CryptoCoin/assets/97007431/da7f16a4-551f-488d-87f1-ff2c9c28ea65)
