@@ -10,7 +10,7 @@ const Bag = ({order}) => {
 
     useEffect( () => {
         if (order !== {})
-        setOrderArray([... orderArray, order])
+        setOrderArray([...orderArray, order])
     }, [order])
 
     useEffect( () => {
@@ -46,7 +46,7 @@ const Bag = ({order}) => {
                 </div>
                 <div className="foodInOrderContainer">
                     {orderArray[0] ? orderArray.map( (oneItem) => {
-                    const {id, image, title, price, tags, quantity} = oneItem
+                    const {id, title, price, quantity} = oneItem
                     return(
                         <div className="oneFoodInOrder" key={id}>
                             <h5 className="oneFoodInOrderName">
@@ -60,7 +60,7 @@ const Bag = ({order}) => {
                             <p className="oneFoodInOrderText">{price * quantity} kč</p>
                         </div>
                     )
-                    }) : <div className="emptyOrderContainer">Prázndý košík</div>}
+                    }) : <div className="emptyOrderContainer">Prázdný košík</div>}
                 </div>
                 <div className="priceContainer">
                     <p>Celkem</p>
@@ -68,9 +68,9 @@ const Bag = ({order}) => {
                 </div>
                 {total ? 
                     <form className="form">
-                        <input type="text" placeholder="Jméno a příjmění"/>
+                        <input type="text" placeholder="Jméno a příjmení"/>
                         <input type="text" placeholder="Adresa"/>
-                        <input type="mail" placeholder="Mail"/>
+                        <input type="mail" placeholder="E-mail"/>
                         <p>Zahraniční čísla piště s předvolbou.</p>
                         <p>Write foreign numbers with area code.</p>
                         <input type="tel" placeholder="Telefon" pattern="[0-9]{9-14}"/>
