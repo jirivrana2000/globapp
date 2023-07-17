@@ -35,12 +35,12 @@ const Bag = ({order}) => {
     return (
         <div className="bagContainer" >
             <button className="shopCartButton" onClick={() => openOrderContainer()}>
-                <img className="shopCartImg" src={bagIcon} alt="" />
+                <img className="shopCartImg" src={bagIcon} alt="košík" />
             </button>
             <div id={open ? "" : "hiden"} className="orderContainer">
                 <div className="foodInOrderInfo">
                     <button className="foodInOrderCloseButton" onClick={() => openOrderContainer()}><IoMdClose /></button>
-                    <h4 className="foodInOrderInfoName">Název</h4>
+                    <h3 className="foodInOrderInfoName">Název</h3>
                     <p className="foodInOrderInfoText">Počet</p>
                     <p className="foodInOrderInfoText">Cena</p>
                 </div>
