@@ -9,7 +9,7 @@ const Bag = ({order}) => {
     let total = 0
 
     useEffect( () => {
-        if (order !== {})
+        if (order)
         setOrderArray([...orderArray, order])
     }, [order])
 

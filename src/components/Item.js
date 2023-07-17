@@ -25,13 +25,13 @@ const Item = (props) => {
         }
     }
 
-    useEffect(() => {
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-      }, []);
-
     const ScrollTop = () => {
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
     }
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0})
+      }, []);
 
     return ( 
         <div className="itemContainer">
