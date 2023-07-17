@@ -25,13 +25,13 @@ const Item = (props) => {
         }
     }
 
-    const ScrollTop = () => {
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    const ScrollTop = (behavior) => {
+        window.scrollTo({top: 0, left: 0, behavior: behavior})
     }
 
     useEffect(() => {
-        window.scrollTo({top: 0, left: 0})
-      }, []);
+        ScrollTop("instant")
+      }, [])
 
     return ( 
         <div className="itemContainer">
@@ -52,25 +52,25 @@ const Item = (props) => {
             <div className="sauceContainer">
                 <h2 className="h2">Ochutnejte naše omáčky</h2>
                 <div className="sauce">
-                    <div onClick={ () => ScrollTop()} className="xoneSauce">
+                    <div onClick={ () => ScrollTop("smooth")} className="xoneSauce">
                         <Link className="oneSauce" to={`/jidlo/39`} >
                             <h3 className="sauceComment">BBQ</h3>
                             <img className="imgSauce" src={data[38].image} alt="jídlo" />
                         </Link>
                     </div>
-                    <div onClick={ () => ScrollTop()} className="xoneSauce">
+                    <div onClick={ () => ScrollTop("smooth")} className="xoneSauce">
                         <Link className="oneSauce" to={`/jidlo/40`} >
                             <h3 className="sauceComment">Kečup</h3>
                             <img className="imgSauce" src={data[39].image} alt="jídlo" />
                         </Link>
                     </div>
-                    <div onClick={ () => ScrollTop()} className="xoneSauce">
+                    <div onClick={ () => ScrollTop("smooth")} className="xoneSauce">
                         <Link className="oneSauce" to={`/jidlo/41`} >
                             <h3 className="sauceComment">Tatarka</h3>
                             <img className="imgSauce" src={data[40].image} alt="jídlo" />
                         </Link>
                     </div>
-                    <div onClick={ () => ScrollTop()} className="xoneSauce">
+                    <div onClick={ () => ScrollTop("smooth")} className="xoneSauce">
                         <Link className="oneSauce" to={`/jidlo/42`} >
                             <h3 className="sauceComment">Jalapeno</h3>
                             <img className="imgSauce" src={data[41].image} alt="jídlo" />
