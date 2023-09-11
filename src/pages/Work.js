@@ -3,7 +3,7 @@ import "../styles/AllProjects.css"
 import { Link } from "react-router-dom"
 
 const Work = () => {
-    sconst [data, setData] = useState([])
+    const [data, setData] = useState([])
 
     useEffect(() => {
         const storedData = JSON.parse(localStorage.getItem("projects")) || []
@@ -16,13 +16,13 @@ const Work = () => {
         localStorage.setItem("projects", JSON.stringify(filteredProjects))
     }
 
-    const schoolProjects = data.filter((oneProject) => oneProject.type === "prace");
+    const workProjects = data.filter((oneProject) => oneProject.type === "prace");
 
     return (
         <div className="allProjectContainer">
             <h2 className="oneProjectH2">Pracovní projekty:</h2>
             <div>
-                {schoolProjects.map((oneProject) => {
+                {workProjects.map((oneProject) => {
                 return (
                     <div key={oneProject.id} id={oneProject.id} className="oneOfProjects">
                     <Link to={`/projekt/${oneProject.id}`}>
