@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"
 import "../styles/AllProjects.css"
 import { Link } from "react-router-dom"
 
@@ -23,18 +23,18 @@ const Work = () => {
             <h2 className="oneProjectH2">Pracovní projekty:</h2>
             <div>
                 {workProjects.map((oneProject) => {
-                return (
-                    <div key={oneProject.id} id={oneProject.id} className="oneOfProjects">
-                    <Link to={`/projekt/${oneProject.id}`}>
-                        <h2 className="oneTaskHeader">{oneProject.name}</h2>
-                        <p className="oneTaskDate">Datum konání: {oneProject.date}</p>
-                        <p>{oneProject.info}</p>
-                    </Link>
-                    <button type="button" onClick={() => removeProject(oneProject.id)}>
-                        vymazat
-                    </button>
-                    </div>
-                )
+                    return (
+                        <div key={oneProject.id} id={oneProject.id} className="oneOfProjects">
+                            <Link to={`/projekt/${oneProject.id}`}>
+                                <h2 className="oneTaskHeader">{oneProject.name}</h2>
+                                <p className="oneTaskDate">Datum konání: {oneProject.date}</p>
+                                <p>{oneProject.info}</p>
+                            </Link>
+                            <button type="button" onClick={() => removeProject(oneProject.id)}>
+                                vymazat
+                            </button>
+                        </div>
+                    )
                 })}
             </div>
         </div>
