@@ -1,6 +1,5 @@
 import "../styles/NavBar.css"
 import { NavLink } from "react-router-dom"
-import { AiOutlinePlus } from "react-icons/ai";
 
 
 const NavBar = () => {
@@ -11,7 +10,7 @@ const NavBar = () => {
                 
             </div>
             <nav className="navBarContainer">
-                <NavLink to="/novyprojekt" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } ><AiOutlinePlus /></NavLink><br />
+                <NavLink to="/novyprojekt" className="nonactiveLink" id="form" >+</NavLink><br />
                 <NavLink to="/" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } >Projekty</NavLink><br />
                 <NavLink to="/prace" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } >Práce</NavLink><br />
                 <NavLink to="/skola" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } >Škola</NavLink><br />

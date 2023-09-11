@@ -23,6 +23,12 @@
     text-align: center;
 }
 .activeLink {
-    color: rgb(0, 162, 255);;
-    border-bottom: 3px solid rgb(0, 162, 255);;
+    color: rgb(0, 162, 255);
+    border-bottom: 3px solid rgb(0, 162, 255);
+}
+
+#form {
+    background-color: rgba(0, 162, 255, 0.827);
+    color: white;
+    font-size: 30px;
 }
