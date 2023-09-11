@@ -1,31 +1,30 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { useState } from "react"
 import SharedLayout from "./components/SharedLayout"
-import Home from "./pages/Home"
-import Item from "./components/Item"
+import AllProjects from "./pages/AllProjects"
+import NewProject from "./pages/NewProject"
+import Work from "./pages/Work"
+import School from "./pages/School"
+import Personal from "./pages/Personal"
 import Error from "./pages/Error"
-import ItemsPizza from "./pages/ItemsPizza"
-import ItemsBurger from "./pages/ItemsBurger"
-import ItemsToOrder from "./pages/ItemsToOrder"
-import ItemsSideDish from "./pages/ItemsSideDish"
-import ItemsSauces from "./pages/ItemsSauces"
+import OneProject from "./pages/OneProject";
+
 
 const App = () => {
-    const [order, setOrder] = useState({})
+
+
 
     return (
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={ <SharedLayout order={order} />} >
-                        <Route index element={ <Home /> } />
-                        <Route path="/pizza" element={ <ItemsPizza /> } />
-                        <Route path="/burger" element={ <ItemsBurger /> } />
-                        <Route path="/minutky" element={ <ItemsToOrder /> } />
-                        <Route path="/prilohy" element={ <ItemsSideDish /> } />
-                        <Route path="/omacky" element={ <ItemsSauces /> } />
-                        <Route path="/jidlo/:foodId" element={ <Item adItem={order => setOrder(order)} /> } />
-                        <Route path="*" element={ <Error /> } />
+                    <Route path="/" element={ <SharedLayout />} >
+                    <Route index element={ <AllProjects /> } />
+                    <Route path="/novyprojekt" element={ <NewProject /> } />
+                    <Route path="/prace" element={ <Work /> } />
+                    <Route path="/skola" element={ <School /> } />
+                    <Route path="/osobni" element={ <Personal /> } />
+                    <Route path="/projekt/:projektId" element={ <OneProject /> } />
+                    <Route path="*" element={ <Error /> } />
                     </Route>
                 </Routes>
             </BrowserRouter>

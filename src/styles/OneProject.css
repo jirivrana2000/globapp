@@ -1,0 +1,48 @@
+* {
+    font-size: 18px;
+}
+
+.oneProject {
+    width: 800px;
+    margin: 10px;
+    padding: 10px;
+    margin: 30px auto;
+}
+
+.oneProjectH1 {
+    font-size: 40px;
+    padding: 0px;
+    margin-left: -10px;
+}
+
+.tasksHeader {
+    font-size: 30px;
+}
+
+.oneProjectH1,
+article p,
+.tasks {
+    margin-bottom: 10px;
+}
+
+.tasks {
+    border: 3px solid green;
+}
+
+.task {
+    margin-top: 10px;
+    padding: 5px;
+    border: 3px solid rgb(0, 162, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.oneTaskHeader {
+    font-size: 30px;
+    padding: 5px;
+}
+
+.infoHeader {
+    font-size: 20px;
+}

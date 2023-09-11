@@ -1,13 +1,11 @@
 import { Outlet } from "react-router-dom"
 import NavBar from "./NavBar"
-import Footer from "./Footer"
 
-const SharedLayout = ({order}) => {
+const SharedLayout = () => {
     return (
         <>
-            <NavBar order={order}/>
+            <NavBar />
             <Outlet />
-            <Footer />
         </>
     )
 }

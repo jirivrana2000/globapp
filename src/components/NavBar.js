@@ -1,25 +1,21 @@
 import "../styles/NavBar.css"
-import Bag from "./Bag"
 import { NavLink } from "react-router-dom"
-import NavBarLogo from "../img/NavBarLogo.png"
+import { AiOutlinePlus } from "react-icons/ai";
 
-const NavBar = ({order}) => {
+
+const NavBar = () => {
     return (
         <header>
             <div className="headerContainer">
-                <div className="logoContainer">
-                    <img className="navBarImg" src={NavBarLogo} alt="" />
-                    <h1>Jídlo domů.cz</h1>
-                </div>
-              {  <Bag order={order} />}
+                <h1 className="main">Aplikace pro správu projektů</h1>
+                
             </div>
             <nav className="navBarContainer">
-                <NavLink to="/" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } >Domů</NavLink><br />
-                <NavLink to="/pizza" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } >Pizza</NavLink><br />
-                <NavLink to="/burger" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } >Burger</NavLink><br />
-                <NavLink to="/minutky" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } >Minutky</NavLink><br />
-                <NavLink to="/prilohy" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } >Přílohy</NavLink><br />
-                <NavLink to="/omacky" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } >Omáčky</NavLink><br />
+                <NavLink to="/novyprojekt" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } ><AiOutlinePlus /></NavLink><br />
+                <NavLink to="/" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } >Projekty</NavLink><br />
+                <NavLink to="/prace" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } >Práce</NavLink><br />
+                <NavLink to="/skola" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } >Škola</NavLink><br />
+                <NavLink to="/osobni" className={ ({isActive}) => isActive ? "activeLink" : "nonactiveLink" } >Osobní</NavLink><br />
             </nav> 
         </header>
     )
